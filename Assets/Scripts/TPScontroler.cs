@@ -38,7 +38,7 @@ public class TPScontroler : MonoBehaviour
     void Update()
     {
         var TotalMovement = ApplyMove() + ApplyJump() + ApplyGravity();
-        controller.Move(TotalMovement * Time.deltaTime); //on demande au controller de deplacer le Player en fonction de DirectionToFall
+        controller.Move(TotalMovement * Time.deltaTime); //on demande au controller de deplacer le Player en fonction de TotalMovement
     }
 
 
